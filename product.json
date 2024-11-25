@@ -1,0 +1,19 @@
+{
+    "product": [
+
+    {
+        "id": 1,
+        "title": "Креветки со сладким чили",
+        "description": "Креветки, ананасы, соус сладкий чили, сладкий перец, моцарелла, соус альфредо",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqARK95QELOyJSgiHJp_D0-_3aEERFb-yTcg&s",
+        "price": 545
+    },
+    {
+        "id": 2,
+        "title":"Мясо с картофельным пюре",
+        "description": "Мясо с картофельным пюре, салат из капусты, соус сельдерей, лук, морковь, соус английский",
+        "img": "https://static.1000.menu/files/user-v2/78/22/661109/foto/f_19-04-2023-12-54-29.1681908870.jpg",
+        "price": 690
+    }
+]
+}
