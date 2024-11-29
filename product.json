@@ -1,19 +1,39 @@
 {
-    "product": [
-
+  "product": [
     {
-        "id": 1,
-        "title": "Креветки со сладким чили",
-        "description": "Креветки, ананасы, соус сладкий чили, сладкий перец, моцарелла, соус альфредо",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqARK95QELOyJSgiHJp_D0-_3aEERFb-yTcg&s",
-        "price": 545
+      "title": "Креветки со сладким чили вкус",
+      "description": "Креветки, ананасы, соус сладкий чили, сладкий перец, моцарелла, соус альфредо",
+      "price": "545",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqARK95QELOyJSgiHJp_D0-_3aEERFb-yTcg&s",
+      "id": "1"
     },
     {
-        "id": 2,
-        "title":"Мясо с картофельным пюре",
-        "description": "Мясо с картофельным пюре, салат из капусты, соус сельдерей, лук, морковь, соус английский",
-        "img": "https://static.1000.menu/files/user-v2/78/22/661109/foto/f_19-04-2023-12-54-29.1681908870.jpg",
-        "price": 690
+      "id": "2",
+      "title": "Мясо с картофельным пюре",
+      "description": "Мясо с картофельным пюре, салат из капусты, соус сельдерей, лук, морковь, соус английский",
+      "img": "https://static.1000.menu/files/user-v2/78/22/661109/foto/f_19-04-2023-12-54-29.1681908870.jpg",
+      "price": 690
+    },
+    {
+      "title": "Арбуз чон",
+      "description": "Креветки, ананасы, соус сладкий чили, сладкий перец, моцарелла, соус альфредо",
+      "price": "450",
+      "img": "https://здоровое-питание.рф/upload/iblock/019/dpesc7tm1mhsb2ndx295pwxebzrl6cfp/lori_0037992451_bigwww.jpg",
+      "id": "1732511394132"
+    },
+    {
+      "id": "1732521768777",
+      "title": "Банан",
+      "description": "Мясо с картофельным пюре, салат из капусты, соус сельдерей, лук, морковь, соус английский",
+      "img": "https://zakaz.s-globus.ru/media/Zakaz/Product/2024-04-10/Zakaz/Product/2024-04-10/343300fa2a36738d58195f8d79aa1770_0.jpg",
+      "price": 200
+    },
+    {
+      "id": 1732687394367,
+      "title": "гнешг",
+      "description": "Сочный арбуз напомнит лето",
+      "img": "https://здоровое-питание.рф/upload/iblock/019/dpesc7tm1mhsb2ndx295pwxebzrl6cfp/lori_0037992451_bigwww.jpg",
+      "price": 600
     }
-]
+  ]
 }

@@ -3,89 +3,87 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 header {
 	width: 100%;
 	background-color: aqua;
 	display: flex;
 	justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+	align-items: center;
+	padding: 20px 40px;
 }
-.header__logo{
-    font-family: "Poppins", sans-serif;
-    color: blue;
+.header__logo {
+	font-family: 'Poppins', sans-serif;
+	color: blue;
 }
-.header__items{
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
+.header__items {
+	width: 350px;
+	display: flex;
+	justify-content: space-between;
 }
-.header__item{
-    list-style-type: none;
+.header__item {
+	list-style-type: none;
+}
+.header__item a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Poppins', sans-serif;
+}
+.header__item a:hover {
+	color: blue;
+}
+.footer {
+	width: 100%;
+	background-color: aqua;
+}
+.footer__logo {
+	font-family: 'Poppins', sans-serif;
+	color: blue;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 0 30px;
 }
-.header__item a{
-    text-decoration: none;
-    color: black;
-    font-family: "Poppins", sans-serif;
+.product {
+	width: 301px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding-bottom: 40px;
+	border-radius: 20px;
 }
-.header__item a:hover{
-    color:blue
+.product__img {
+	width: 300px;
+	height: 250px;
+	border-radius: 20px 20px 0 0;
 }
-.footer{
-    width: 100%;
-    background-color: aqua;
+.product__title {
+	font-family: 'Poppins', sans-serif;
+	line-height: 27px;
+	margin-top: 10px;
+	margin-left: 15px;
 }
-.footer__logo{
-    font-family: "Poppins", sans-serif;
-    color: blue;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product__desc {
+	font-family: 'Poppins', sans-serif;
+	line-height: 20px;
+	margin: 10px 5px 0 15px;
 }
-
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 30px;
-
-}
-.product{
-    width: 301px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    padding-bottom: 40px;
-    border-radius: 20px;
-}
-.product__img{
-    width: 300px;
-    height: 250px;
-    border-radius: 20px 20px 0 0;
-}
-.product__title{
-    font-family: "Poppins", sans-serif;
-    line-height: 27px; 
-    margin-top: 10px;
-    margin-left: 15px; 
-}
-.product__desc{
-    font-family: "Poppins", sans-serif;
-    line-height: 20px;
-    margin: 10px 5px 0 15px;
-}
-.product__price{
-    font-family: "Poppins", sans-serif;
-    margin-left: 20px;
-    margin-top: 20px;
+.product__price {
+	font-family: 'Poppins', sans-serif;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 /* .product__price::after{
     content: 'сом';
@@ -94,39 +92,75 @@ header {
     content: 'Цена: ';
 } */
 
-.product__prici_text{
-    color: brown;
-    font-size: 18px;
+.product__prici_text {
+	color: brown;
+	font-size: 18px;
 }
-#form{
+#form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.form__inp {
+	width: 300px;
+	height: 40px;
+	margin-top: 20px;
+	border-radius: 25px;
+	padding-left: 10px;
+}
+.create__title {
+	margin: 0 auto;
+}
+.form__btn {
+	width: 200px;
+	padding: 10px 20px;
+	cursor: pointer;
+	background-color: green;
+	border: none;
+	border-radius: 100px;
+	margin-top: 20px;
+	color: white;
+	font-size: 17px;
+}
+.form__btn:hover {
+	width: 210px;
+}
+.edit__link {
+	width: 140px;
+	height: 30px;
+	text-decoration: none;
+	color: white;
+	background-color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+.btns{
+    height: 40px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
-.form__inp{
-    width: 300px;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 25px;
-    padding-left: 10px;
-
-}
-.create__title{
-    margin: 0 auto;
-}
-.form__btn{
-    width: 200px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: green;
+.delete__btn{
+    width: 130px;
+    height: 30px;
     border: none;
-    border-radius: 100px;
-    margin-top: 20px;
+    border-radius: 30px;
+    background-color: brown;
     color: white;
-    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 
 }
-.form__btn:hover{
-    width: 210px;
+#search{
+	width: 500px;
+	margin: 20px 0 20px 30px;
+	padding: 10px;
+	border-radius: 30px;
+	border: 1px solid blue;
+	outline: none;
+
 }

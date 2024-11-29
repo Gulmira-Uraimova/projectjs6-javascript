@@ -1,27 +1,46 @@
-const API = 'http://127.0.0.1:5500/javascript/projectjs6/product.json' 
+const API = 'http://localhost:3000/product'
+
+async function fetchProductById(id) {
+	const response = await fetch(`${API}/${id}`, {
+		method: "GET"
+	})
+	return await response.json()
+}
+async function updateProduct(productId, newProduct) {
+	await fetch(`${API}/${productId}`, {
+		method: "PUT",
+		headers: {
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify(newProduct)
+	})
+}
+
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const urlParams = new URLSearchParams(window.location.search)
-       console.log(urlParams.toString())
-    const productId = urlParams.get('id')
-    // const product = await fetchProductById(productId)
-    console.log(productId);
+	const urlParams = new URLSearchParams(window.location.search)
+	const productId = urlParams.get('id')
 
-    const title = document.getElementById('title').value
-	const description = document.getElementById('description').value
-	const price = document.getElementById('price')
-	const img = document.getElementById('img').value
-      console.log(title, description, price, img);
-      const editForm = document.getElementById('form')
-      editForm.addEventListener('submit', () => {
-        e.preventDefault()
-        const updatedProduct = {
-            id: productId,
-            title,
-            description,
-            price: Number(price),
-            img
-        }
-          })
-    
+	const product = await fetchProductById(productId)
+
+	document.getElementById('title').value = product.title
+	document.getElementById('description').value = product.description
+	document.getElementById('price').value = product.price
+	document.getElementById('img').value = product.img
+	
+	// let title = ''
+	// title = 'Арбуз'
+	const editForm = document.getElementById('form')
+	editForm.addEventListener('submit', async (e) => {
+		e.preventDefault()
+		const newProduct = {
+			title: document.getElementById('title').value,
+			description: document.getElementById('description').value,
+			price: document.getElementById('price').value,
+			img: document.getElementById('img').value
+		}
+		await updateProduct(productId, newProduct)
+
+
+	})
 })
